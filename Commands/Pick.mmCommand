@@ -4,7 +4,6 @@
   input         = 'none';
   output        = 'actions';
   keyEquivalent = '^z';
-  disabled      = '1';
   script        =
 '#!/bin/bash
 PICK=`"${MM_BUNDLE_SUPPORT}/bin/pick.sh"`
