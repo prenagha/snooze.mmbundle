@@ -1,11 +1,11 @@
 {
-  name          = 'Next Week';
+  name          = '6. Next Week';
   uuid          = 'CF7A675B-4005-46AA-B045-85245A3251F5';
   input         = 'none';
   output        = 'actions';
   keyEquivalent = '^z';
   script        =
 '#!/bin/bash
-"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" 
+"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v+1d -v+mon
 ';
 }

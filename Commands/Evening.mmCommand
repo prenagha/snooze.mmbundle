@@ -1,0 +1,12 @@
+{
+  name          = '2. This Evening';
+  uuid          = 'FFE01BC4-465B-4A4A-9FED-01471B5F2B9D';
+  input         = 'none';
+  output        = 'actions';
+  keyEquivalent = '^z';
+	environment   = 'SNOOZE_NO_MORN=X\n';	
+  script        =
+'#!/bin/bash
+"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v18H
+';
+}

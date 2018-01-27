@@ -1,0 +1,12 @@
+{
+  name          = '1. Later Today';
+  uuid          = 'A63B820B-BE4A-4332-91FC-5964CC23AC90';
+  input         = 'none';
+  output        = 'actions';
+  keyEquivalent = '^z';
+	environment   = 'SNOOZE_NO_MORN=X\n';	
+  script        =
+'#!/bin/bash
+"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v+5H
+';
+}
