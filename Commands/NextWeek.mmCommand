@@ -6,6 +6,6 @@
   keyEquivalent = '^z';
   script        =
 '#!/bin/bash
-"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v+1d -v+mon
+"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v+1d -v+mon -v9H
 ';
 }

@@ -4,7 +4,6 @@
   input         = 'none';
   output        = 'actions';
   keyEquivalent = '^z';
-  environment   = 'SNOOZE_NO_MORN=X\n';	
   script        =
 '#!/bin/bash
 "${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v+5H

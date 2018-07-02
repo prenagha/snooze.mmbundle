@@ -8,28 +8,24 @@
 #
 
 TM="-v0M -v0S"
-if [ -z "$SNOOZE_NO_MORN" ]
-then
-  TM="-v9H -v0M -v0S"
-fi
 if [ -z "$PICK" ]
 then
   DTS=`date -R $* $TM`
-  UNTIL=`date $* $TM "+%b %-d %-I%p"`
+  UNTIL=`date $* $TM "+%a %b %-d %-I%p"`
 else
   DTS=`date $TM -jf "%m/%d/%y" ${PICK}`
-  UNTIL=`date $TM -jf "%m/%d/%y" ${PICK} "+%b %-d %-I%p"`
+  UNTIL=`date $TM -jf "%m/%d/%y" ${PICK} "+%a %b %-d %-I%p"`
 fi
 
-
+# may need something here, if already in Sent, or From "me" then don't move to archive
+# so if can get current folder that might help
 
 cat << ENDACTIONS
 { actions = (
 	{
 		type = "changeHeaders";
 		headers = { 
- 		  "Date" = "$DTS"; 
-		  "X-Snooze" = "$DTS"; 
+		  "x-snooze" = "$DTS"; 
 		};
 	},
   {
