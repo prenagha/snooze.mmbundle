@@ -17,9 +17,6 @@ else
   UNTIL=`date $TM -jf "%m/%d/%y" ${PICK} "+%a %b %-d %-I%p"`
 fi
 
-# may need something here, if already in Sent, or From "me" then don't move to archive
-# so if can get current folder that might help
-
 cat << ENDACTIONS
 { actions = (
 	{

@@ -16,4 +16,4 @@ To achieve this create a Smart Mailbox, Snooze:
 
 I use the display count on the Snooze mailbox as the indication something has woken-up. You could also set a rule on the Snooze mailbox and move messages to the Inbox when they wake-up.
 
-Date calculations use the Mac's [command line date function](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/date.1.html)
+Date calculations use the Mac's command line date function
