@@ -6,6 +6,7 @@
   keyEquivalent = '^z';
   script        =
 '#!/bin/bash
+PATH=/usr/local/bin:/usr/bin:$PATH
 "${MM_BUNDLE_SUPPORT}/bin/snooze.py" month
 ';
 }
