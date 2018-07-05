@@ -1,11 +1,11 @@
 {
-  name          = '2. This Evening';
+  name          = '1. This Evening';
   uuid          = 'FFE01BC4-465B-4A4A-9FED-01471B5F2B9D';
   input         = 'none';
   output        = 'actions';
   keyEquivalent = '^z';
   script        =
 '#!/bin/bash
-"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v18H
+"${MM_BUNDLE_SUPPORT}/bin/snooze.py" evening
 ';
 }

@@ -11,7 +11,10 @@ Make sure you have a `Later` folder in all your IMAP accounts.
 Message wake-up by appearing in a Smart Mailbox when they awake.
 To achieve this create a Smart Mailbox, Snooze:
 * Source the `Later` folder in each IMAP account
-* Set the mailbox condition to `x-snooze is not within last 0 days`
+* Set the mailbox condition to `Any` of
+    * `x-snooze is not within last 0 days`
+    * `x-snoose does not exist`
+    * `date is not within last 32 days`
 * Set the Displayed Count on the mailbox to `All`
 
 I use the display count on the Snooze mailbox as the indication something has woken-up. You could also set a rule on the Snooze mailbox and move messages to the Inbox when they wake-up.

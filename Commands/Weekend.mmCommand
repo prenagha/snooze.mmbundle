@@ -1,11 +1,11 @@
 {
-  name          = '5. Weekend';
+  name          = '4. Weekend';
   uuid          = '612754CC-0F6E-4D78-87E0-61C6D46F58CC';
   input         = 'none';
   output        = 'actions';
   keyEquivalent = '^z';
   script        =
 '#!/bin/bash
-"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" -v+1d -v+sat -v9H
+"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" weekend
 ';
 }

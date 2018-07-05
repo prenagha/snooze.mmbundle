@@ -1,5 +1,5 @@
 {
-  name          = '8. Pick a Date';
+  name          = '7. Pick a Date';
   uuid          = 'E82ABF1D-DC64-4005-89F4-6C3E7608B1C4';
   input         = 'none';
   output        = 'actions';
@@ -7,7 +7,6 @@
   script        =
 '#!/bin/bash
 PICK=`"${MM_BUNDLE_SUPPORT}/bin/pick.sh"`
-export PICK
-"${MM_BUNDLE_SUPPORT}/bin/snooze.sh"
+"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" pick $PICK
 ';
 }
