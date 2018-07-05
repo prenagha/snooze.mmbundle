@@ -13,10 +13,8 @@ To achieve this create a Smart Mailbox, Snooze:
 * Source the `Later` folder in each IMAP account
 * Set the mailbox condition to `Any` of
     * `x-snooze is not within last 0 days`
-    * `x-snoose does not exist`
+    * `x-snooze does not exist`
     * `date is not within last 32 days`
 * Set the Displayed Count on the mailbox to `All`
 
 I use the display count on the Snooze mailbox as the indication something has woken-up. You could also set a rule on the Snooze mailbox and move messages to the Inbox when they wake-up.
-
-Date calculations use the Mac's command line date function
