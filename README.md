@@ -8,6 +8,8 @@ Snoozing a message does the following:
 
 Make sure you have a `Later` folder in all your IMAP accounts.
 
+Make sure you have `python3` installed, (http://docs.python-guide.org/en/latest/starting/install3/osx/)[http://docs.python-guide.org/en/latest/starting/install3/osx/]
+
 Message wake-up by appearing in a Smart Mailbox when they awake.
 To achieve this create a Smart Mailbox, Snooze:
 * Source the `Later` folder in each IMAP account
