@@ -6,6 +6,6 @@
   keyEquivalent = '^z';
   script        =
 '#!/bin/bash
-"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" month
+"${MM_BUNDLE_SUPPORT}/bin/snooze.py" month
 ';
 }

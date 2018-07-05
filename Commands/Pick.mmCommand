@@ -7,6 +7,6 @@
   script        =
 '#!/bin/bash
 PICK=`"${MM_BUNDLE_SUPPORT}/bin/pick.sh"`
-"${MM_BUNDLE_SUPPORT}/bin/snooze.sh" pick $PICK
+"${MM_BUNDLE_SUPPORT}/bin/snooze.py" pick $PICK
 ';
 }
