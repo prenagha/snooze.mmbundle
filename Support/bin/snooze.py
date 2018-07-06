@@ -48,9 +48,9 @@ elif when == "pick":
 else:
   raise ValueError("Invalid script argument")
 
+until = dt.strftime("%a %b %d")
 dt = dt.astimezone(datetime.timezone.utc)
 dts = dt.strftime("%Y-%m-%d %H:%M:%S")
-until = dt.strftime("%a %b %d")
 
 out = '''
 { actions = (
