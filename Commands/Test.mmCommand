@@ -1,0 +1,12 @@
+{
+  name          = '9. Test';
+  uuid          = 'AD7E266F-CC23-4A65-BB7B-0856E6AB8E93';
+  input         = 'none';
+  output        = 'actions';
+  keyEquivalent = '^z';
+  script        =
+'#!/bin/bash
+PATH=/usr/local/bin:/usr/bin:$PATH
+"${MM_BUNDLE_SUPPORT}/bin/snooze.py" test
+';
+}

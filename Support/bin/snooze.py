@@ -9,6 +9,9 @@
 import sys
 import datetime
 
+MORNING_HOUR=6
+EVENING_HOUR=18
+
 def monday(d):
   if d.weekday() == 0:
     return d
@@ -22,16 +25,16 @@ def saturday(d):
   return d + datetime.timedelta(days=5-d.weekday())
 
 dt = datetime.datetime.today()
-dt = dt.replace(hour=9, minute=0, second=0, microsecond=0)
+dt = dt.replace(hour=MORNING_HOUR, minute=0, second=0, microsecond=0)
 
 when = sys.argv[1]
 
 if when == "evening":
-  dt = dt.replace(hour=18)
+  dt = dt.replace(hour=EVENING_HOUR)
 elif when == "tomorrow":
   dt = dt + datetime.timedelta(days=1)
 elif when == "tomorrowevening":
-  dt = dt.replace(hour=18)
+  dt = dt.replace(hour=EVENING_HOUR)
   dt = dt + datetime.timedelta(days=1)
 elif when == "weekend":
   dt = dt + datetime.timedelta(days=1)
@@ -44,11 +47,15 @@ elif when == "month":
   dt = monday(dt)
 elif when == "pick":
   dt = datetime.datetime.strptime(sys.argv[2], "%m/%d/%y")
-  dt = dt.replace(hour=9, minute=0, second=0, microsecond=0)
+  dt = dt.replace(hour=MORNING_HOUR, minute=0, second=0, microsecond=0)
+elif when == "test":
+  dt = datetime.datetime.today()
+  dt = dt.replace(second=0, microsecond=0)
+  dt = dt + datetime.timedelta(minutes=5)
 else:
   raise ValueError("Invalid script argument")
 
-until = dt.strftime("%a %b %d")
+until = dt.strftime("%a %b %-d %-I %p")
 dt = dt.astimezone(datetime.timezone.utc)
 dts = dt.strftime("%Y-%m-%d %H:%M:%S")
 
