@@ -8,6 +8,7 @@
 #
 import sys
 import datetime
+import pytz
 
 MORNING_HOUR=6
 EVENING_HOUR=18
@@ -56,7 +57,7 @@ else:
   raise ValueError("Invalid script argument")
 
 until = dt.strftime("%a %b %-d %-I %p")
-dt = dt.astimezone(datetime.timezone.utc)
+dt = pytz.timezone('UTC').localize(dt)
 dts = dt.strftime("%Y-%m-%d %H:%M:%S")
 
 out = '''
